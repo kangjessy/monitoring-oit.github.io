@@ -1,0 +1,25 @@
+a.nama-channel {
+    color: rgb(43, 45, 48);
+}
+
+a:hover.nama-channel {
+    text-decoration: none;
+    color: rgb(44, 96, 194);
+}
+
+p.nama-data{
+    font-size: 20px;
+}
+
+p.nama-data i{
+    font-size: 15px;
+}
+
+.desk-keterangan p{
+    margin-bottom: 3px;
+    font-size: 13px;
+}
+
+a:hover.author-link{
+    text-decoration: none;
+}

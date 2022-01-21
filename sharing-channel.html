@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Public - My Channel</title>
+    <title>Sharing - My Channel</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -388,13 +388,13 @@
                                   <a class="nav-link" href="private-channel.html">Private View</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link active disabled" href="#">Public View</a>
+                                  <a class="nav-link" href="public-channel.html">Public View</a>
                                 </li>
                                 <li class="nav-item">
                                   <a class="nav-link" href="setting-channel.html">Channel Settings</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="sharing-channel.html">Sharing</a>
+                                  <a class="nav-link active disabled" href="#">Sharing</a>
                                 </li>
                                 <li class="nav-item">
                                   <a class="nav-link" href="api-keys-channel.html">API Keys</a>
@@ -405,21 +405,72 @@
                               </ul>
                             </div>
                           </div>
- 
-                    </div>
+
+                        
+
+                        <div class="col-xl-12 col-md-6 mb-4">
+                            <div class="card border-left-success shadow h-100 py-0">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col mr-2 text-dark">
+                                                <h4 class="text-dark mb-2">Channel Sharing Settings</h4>
+
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                        Keep channel view private
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                                    <label class="form-check-label" for="flexRadioDefault2">
+                                                        Share channel view with everyone
+                                                    </label>
+                                                </div>
+
+
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                                    <label class="form-check-label" for="flexRadioDefault3">
+                                                        Share channel view only with the following users:
+                                                    </label>
+                                                </div>
+
+                                                <div class="row mb-1 text-right font-weight-bold">
+                                                    <label class="col-sm-2 col-form-label col-form-label-sm" >Email Address</label>
+                                                    <div class="col-sm-3">
+                                                      <input type="email" class="form-control form-control-sm " placeholder="youremail@email.com" disabled>
+                                                    </div>
+
+                                                    <a class="btn btn-success btn-sm disabled" href="">Add User</a>
+                                                
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
 
                     <!-- Content Row -->
+                    <div class="row">
 
-                    
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Channel ini bersifat private</h6>
-                        </div>
-                        <div class="card-body">
-                            <p>Untuk membuat channel ini menjadi publik, ubah melalui <a href="sharing-channel.html">Sharing</a>.</p>
+                        <div class="col-lg-12 mb-4">
+
+                            <!-- Approach -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Halaman Informasi</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>Ketika <code>radio box</code> pertama atau kedua aktif; bagian <code>email</code>, <code>label input email</code>, dan <code>button add user</code> dalam keadaan <i><code>disabled</code></i>.</p>
+                                    <p class="mb-0">Tapi ketika <code>radio box</code> ketiga aktif; bagian <code>email</code>, <code>label input email</code>, dan <code>button add user</code> dalam keadaan <i><code>active</code></i></p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                   
 
                 </div>
                 <!-- /.container-fluid -->

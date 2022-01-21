@@ -9,22 +9,20 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Channel</title>
+    <title>API Keys - My Channel</title>
 
-    <!-- Custom fonts for this template -->
+    <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this page -->
-    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-    
     <!-- Custom Sendiri nih CSS nya -->
     <link href="css/buatansendiri.css" rel="stylesheet">
+
 
 </head>
 
@@ -47,56 +45,22 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
-
             <!-- Divider -->
             <hr class="sidebar-divider">
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Interface
+                Dashboard
             </div>
 
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Components</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="buttons.html">Buttons</a>
-                        <a class="collapse-item" href="cards.html">Cards</a>
-                    </div>
-                </div>
+            <!-- Nav Item - Channel -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-project-diagram"></i>
+                    <span>Channel</span></a>
             </li>
 
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Utilities</span>
-                </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Colors</a>
-                        <a class="collapse-item" href="utilities-border.html">Borders</a>
-                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a class="collapse-item" href="utilities-other.html">Other</a>
-                    </div>
-                </div>
-            </li>
-
+            
             <!-- Divider -->
             <hr class="sidebar-divider">
 
@@ -105,6 +69,23 @@
                 Addons
             </div>
 
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Charts</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Tables</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+            
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
@@ -124,27 +105,6 @@
                         <a class="collapse-item" href="blank.html">Blank Page</a>
                     </div>
                 </div>
-            </li>
-
-            <!-- Nav Item - Channel -->
-            <li class="nav-item active">
-                <a class="nav-link" href="channel.html">
-                    <i class="fas fa-fw fa-project-diagram"></i>
-                    <span>Channel</span></a>
-            </li>
-
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
-            </li>
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
             </li>
 
             <!-- Divider -->
@@ -168,11 +128,9 @@
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
-                    <form class="form-inline">
-                        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                    </form>
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
 
                     <!-- Topbar Search -->
                     <form
@@ -374,86 +332,171 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">My Channel</h1>
-                    <!-- <p class="mb-4">Dibawah ini adalah daftar limbah yang terdapat kedalam database Maung. Silakan protes kalau ada yang belum terdata, tapi jangan sama saya. YNTKTS. <a target="_blank"
-                            href="https://datatables.net">official DataTables documentation</a>.</p> -->
-                        <button class="btn btn-primary mb-1"><i class="fas fa-plus-square"></i> New Channel</button>
-                        
-                    <!-- Topbar Search -->
-                    <form
-                    class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 channels-search">
-                    <div class="input-group">
-                        <input type="text" class="form-control bg-darkborder-0 small" placeholder="Search for..."
-                            aria-label="Search" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary" type="button">
-                                <i class="fas fa-search fa-sm"></i>
-                            </button>
-                        </div>
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Monitoring Suhu & Kelembaban</h1>
+                        <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
                     </div>
-                    </form>
 
-                    <!-- DataTales Example -->
-                    <div class="card shadow mt-4 mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Data Channels</h6>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Created</th>
-                                            <th>Updated</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Created</th>
-                                            <th>Updated</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <a class="nama-channel" href=""><p class="nama-data"><i class="fas fa-lock mt-auto"></i> Monitoring Suhu & Kelembaban</p></a>
+                    <!-- Content Row -->
+                    <div class="row">
 
-                                                <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                                    <a href="private-channel.html" class="btn btn-outline-primary">Private</a>
-                                                    <a href="public-channel.html" class="btn btn-outline-primary">Public</a>
-                                                    <a href="setting-channel.html" class="btn btn-outline-primary">Settings</a>
-                                                    <a href="sharing-channel.html" class="btn btn-outline-primary">Sharing</a>
-                                                    <a href="api-keys-channel.html" class="btn btn-outline-primary">API Keys</a>
-                                                    <a href="data-ie-channel.html" class="btn btn-outline-primary">Data Import / Export</a>
-                                                  </div>
-                                                
-                                            </td>
-                                            <td>2021-11-03</td>
-                                            <td>2021-11-03 22:09</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>
-                                                <a class="nama-channel" href=""><p class="nama-data"><i class="fas fa-lock mt-auto"></i> Monitoring Limbah Industri</p></a>
-
-                                                <div class="btn-group">
-                                                    <a href="private-channel.html" class="btn btn-outline-primary">Private</a>
-                                                    <a href="public-channel.html" class="btn btn-outline-primary">Public</a>
-                                                    <a href="setting-channel.html" class="btn btn-outline-primary">Settings</a>
-                                                    <a href="sharing-channel.html" class="btn btn-outline-primary">Sharing</a>
-                                                    <a href="api-keys-channel.html" class="btn btn-outline-primary">API Keys</a>
-                                                    <a href="data-ie-channel.html" class="btn btn-outline-primary">Data Import / Export</a>
-                                                </div>
-                                            </td>
-                                            <td>2021-11-03</td>
-                                            <td>2021-11-03 22:09</td>
-                                        </tr>
-                                       
-                                    </tbody>
-                                </table>
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-dark text-uppercase mb-1 desk-keterangan">
+                                                <p>Channel ID : <b>0001</b></p> 
+                                                <p>Author : <a class="author-link" href="#">Jessy yang Ganteng & Intelek</a></p> 
+                                                <p>Access : <b>Private</b></p> 
+                                                <p>Deskripsi : Monitoring Suhu</p> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-dark text-uppercase mb-1 desk-keterangan">
+                                                <h5><b>Channel Status</b></h5> 
+                                                
+                                                <p>Created: 2 bulan lalu</p> 
+                                                <p>Last Entry: 2 bulan lalu</p> 
+                                                <p>Entries: 100</p> 
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Title Treatment -->
+                        <div class=" col-xl-12 col-md-6 mb-4">
+                            <div class="card-header">
+                              <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="private-channel.html">Private View</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="public-channel.html">Public View</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="setting-channel.html">Channel Settings</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="sharing-channel.html">Sharing</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link active disabled" href="#">API Keys</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="data-ie-channel.html">Data Import / Export</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+
+                        
+
+                        <div class="col-xl-12 col-md-6 mb-2">
+                            <div class="card shadow h-100 py-0">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col mr-2 text-dark">
+                                                <h4 class="text-dark mb-2">Read API Keys</h4>
+
+                                                <div class="row mb-2 text-right font-weight-bold">
+                                                    <label class="col-sm-2 col-form-label col-form-label-sm" >Key or Token</label>
+                                                    <div class="col-sm-4">
+                                                      <input type="email" class="form-control form-control-sm " placeholder="UKODQ7NQUEL6LK02" readonly>
+                                                    </div>                                                
+                                                </div>
+
+                                                <div class="row mb-2 mt-2 text-left">
+                                                    <label class="col-sm-2 col-form-label col-form-label-sm"></label>
+                                                    <div class="col-6">
+                                                        <a class="btn btn-warning btn-sm" href="">Generate New API Key</a>
+                                                    </div>
+                                                </div> 
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-12 col-md-6 mb-4">
+                            <div class="card shadow h-100 py-0">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col mr-2 text-dark">
+                                                <h4 class="text-dark mb-2">Write API Keys</h4>
+
+                                                <div class="row mb-1 text-right font-weight-bold">
+                                                    <label class="col-sm-2 col-form-label col-form-label-sm" >Key or Token</label>
+                                                    <div class="col-sm-4">
+                                                      <input type="email" class="form-control form-control-sm " placeholder="UKODQ7NQUEL6LK02" readonly>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row mb-1 text-right font-weight-bold">
+                                                    <label class="col-sm-2 col-form-label col-form-label-sm">Note</label>
+                                                    <div class="col-sm-4">
+                                                        <textarea class="form-control form-control-sm" row="3" ></textarea>
+                                                    </div>
+                                                </div>
+
+                                                 <!-- Save Button-->
+                                                <div class="row mb-4 mt-3 text-left">
+                                                    <label class="col-sm-2 col-form-label col-form-label-sm"></label>
+                                                    <div class="col-6">
+                                                        <a class="btn btn-success" type="button" href="">Save Note</a>
+                                                        <a class="btn btn-danger" type="button" href="">Delete API Key</a>
+                                                    </div>
+                                                </div>   
+
+                                                <hr>
+                                                <div class="row mb-2 mt-4 text-left">
+                                                    <label class="col-sm-2 col-form-label col-form-label-sm"></label>
+                                                    <div class="col-6">
+                                                        <a class="btn btn-warning" type="button" href="">Add New Read API Key</a>
+                                                    </div>
+                                                </div>     
+                                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>                    
+
+                    <!-- Content Row -->
+                    <div class="row">
+
+                        <div class="col-lg-12 mb-4">
+
+                            <!-- Approach -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Halaman Informasi</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>Halaman ini tidak perlu informasi. Informasi lengkap bisa kunjungi web <a href="https://thingspeak.com/channels/1558269/api_keys">ThingSpeak</a>.</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
@@ -467,7 +510,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
+                        <span>Copyright &copy; Maung Bandung Prabu Silih Wangi . 1401 - 2022</span>
                     </div>
                 </div>
             </footer>
@@ -515,11 +558,11 @@
     <script src="js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/demo/datatables-demo.js"></script>
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
 
 </body>
 
